@@ -7,4 +7,4 @@ services:
       - "5555:5555"
     environment:
       - NODE_NAME=node
-      - PORT=5555
+      - PORT=5555 
