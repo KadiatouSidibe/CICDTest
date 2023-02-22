@@ -6,7 +6,7 @@ ENV NODE_NAME=node
 ENV PORT=5555
 
 # Copier les fichiers de configuration du service webMethods Flow
-COPY * /opt/softwareag/IntegrationServer/instances/default/package
+COPY Test /opt/softwareag/IntegrationServer/instances/default/package
 
 # Exposer le port utilisé par le service webMethods Flow
 EXPOSE 5555
