@@ -12,4 +12,4 @@ COPY Test /opt/softwareag/IntegrationServer/instances/default/package
 EXPOSE 5555
 
 # Démarrer le serveur webMethods
-ENTRYPOINT ["/bin/bash", "/opt/softwareag/IntegrationServer/bin/server.sh", "start"]
+CMD [ "/opt/softwareag/IntegrationServer/bin/server.sh", "start"]
