@@ -5,6 +5,8 @@ services:
     image: my-flow-service
     ports:
       - "5555:5555"
+      - "9999:9999"
+    command: /opt/softwareag/IntegrationServer/bin/server.sh start
     environment:
       - NODE_NAME=node
       - PORT=5555 
