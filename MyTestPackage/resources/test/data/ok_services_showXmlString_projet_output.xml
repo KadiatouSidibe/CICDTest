@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<IDataXMLCoder version="1.0">
-  <record javaclass="com.wm.util.Values">
-    <value name="inString">sidibe</value>
-    <value name="message">sidibe</value>
-    <value name="value">6</value>
-  </record>
-</IDataXMLCoder>
