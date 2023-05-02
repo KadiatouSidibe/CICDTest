@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">3.15.3</value>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="psa.frmkLogging.init:init"/>
+  </record>
+  <null name="shutdown_services"/>
+  <null name="replication_services"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="PSAFrmkConfigManagement">*.*</value>
+    <value name="PSAFrmkUtilities">*.*</value>
+    <value name="PSAFrmkRabbitMQPublisher">*.*</value>
+  </record>
+  <value name="listACL">Default</value>
+  <value name="webappLoad">yes</value>
+  <value name="jvm_version">1.8.0_181</value>
+  <value name="description"></value>
+  <value name="publisher">yval4fw0.inetpsa.com</value>
+  <value name="name">PSAFrmkLogging</value>
+  <value name="build">10.3.587</value>
+  <value name="time">2021-08-11 11:58:35 CEST</value>
+  <value name="patch_nums"></value>
+  <value name="reloadWithDependentPackage">yes</value>
+  <null name="created_date"/>
+  <null name="extendedProperties"/>
+</Values>

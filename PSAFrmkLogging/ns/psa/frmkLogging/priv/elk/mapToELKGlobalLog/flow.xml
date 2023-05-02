@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>mapping logEvent to GlobalELk Log</COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>mapping logEvent to GlobalELk Log + message escaping using psa.frmkUtilities.priv.string.java:escapeString</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">logEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">psa.frmkLogging.docs:LogEvent</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">globalLogEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">psa.frmkLogging.docs:elkGlobalLog</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">logEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">psa.frmkLogging.docs:LogEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/level;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/level;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/logVersion;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">1</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="field_usereditable">true</value>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">logVersion</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <array name="field_options" type="value" depth="1">
+    </array>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/logName;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/logger_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/project;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/project;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/language;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/language;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/service;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/service;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/origin;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/origin;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/packageVersion;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/packageVersion;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/packageName;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/packageName;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/applicationName;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/applicationName;1;0">
+</MAPCOPY>
+
+<MAPINVOKE SERVICE="pub.date:getCurrentDateString" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/pattern;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">yyyy-MM-dd' 'HH:mm:ss.SSS</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">pattern</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/logTime;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/requestID;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/requestID;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/senderID;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/senderID;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/countryCode;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/countryCode;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/header;4;0;psa.frmkLogging.docs:LogHeader/instance;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/mdc;2;0/instance;1;0">
+</MAPCOPY>
+
+<MAPINVOKE SERVICE="psa.frmkLogging.priv.elk:cleanCharacteristics" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/logEvent;4;0;psa.frmkLogging.docs:LogEvent/message;1;0" TO="/stringIn;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/stringOut;1;0" TO="/globalLogEvent;4;0;psa.frmkLogging.docs:elkGlobalLog/description;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+</MAP>
+</FLOW>

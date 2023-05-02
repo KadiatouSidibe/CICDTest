@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="shared">LyoqTm9tIGR1IGpvdXJuYWwgZGUgbGEgY29uZmlndXJhdGlvbiBkdSBMb2c0aiovCnByaXZhdGUg
+c3RhdGljIGZpbmFsIFN0cmluZyBERUZBVUxUX0xPR0dFUiA9ICJwc2EuREVGQVVMVF9MT0ciOwoK
+LyoqCiAqIEFsbG8gdG8gbG9nIHRvIHNlcnZlci5sb2cKICogQHBhcmFtCiAqIAkgICBsb2cgbWVz
+c2FnZSAKICovCnByaXZhdGUgc3RhdGljIHZvaWQgbXlMb2coU3RyaW5nIG1lc3NhZ2UpewoJTlNO
+YW1lIGRlYnVnTG9nID0gTlNOYW1lLmNyZWF0ZSgicHViLmZsb3c6ZGVidWdMb2ciKTsKCUlEYXRh
+IGluID0gSURhdGFGYWN0b3J5LmNyZWF0ZSgpOwoJSURhdGFDdXJzb3IgY3Vyc29yaW4gPSBpbi5n
+ZXRDdXJzb3IoKTsKCUlEYXRhVXRpbC5wdXQoY3Vyc29yaW4sICJtZXNzYWdlIiwgbWVzc2FnZSk7
+CglJRGF0YVV0aWwucHV0KGN1cnNvcmluLCAibGV2ZWwiLCAiSW5mbyIpOwoJdHJ5IHsKCQlTZXJ2
+aWNlLmRvSW52b2tlKGRlYnVnTG9nLCBpbik7Cgl9IGNhdGNoIChFeGNlcHRpb24gZSkgewoJCWUu
+cHJpbnRTdGFja1RyYWNlKCk7Cgl9Cn0JCgkKCQoJCgkKCQoJCgk=</value>
+  <value name="encodeutf8">true</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.lang.ns.NSName</value>
+    <value>java.io.File</value>
+    <value>org.apache.logging.log4j.core.LoggerContext</value>
+    <value>org.apache.logging.log4j.LogManager</value>
+  </array>
+</Values>

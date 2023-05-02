@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">makeStringFomStringList</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nW10Jc3RyaW5nTGlzdEluID0gSURhdGFVdGlsLmdldFN0cmluZ0FycmF5
+KCBwaXBlbGluZUN1cnNvciwgInN0cmluZ0xpc3RJbiIgKTsNCglTdHJpbmcJc2VwYXJhdG9yID0g
+SURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxpbmVDdXJzb3IsICJzZXBhcmF0b3IiICk7DQpwaXBl
+bGluZUN1cnNvci5kZXN0cm95KCk7DQoNClN0cmluZ0J1ZmZlciBzPW5ldyBTdHJpbmdCdWZmZXIo
+KTsNCg0KZm9yIChpbnQgaT0wO2k8c3RyaW5nTGlzdEluLmxlbmd0aDtpKyspew0KCXMuYXBwZW5k
+KHN0cmluZ0xpc3RJbltpXSk7DQoJaWYgKGkhPXN0cmluZ0xpc3RJbi5sZW5ndGgtMSkNCgkJcy5h
+cHBlbmQoc2VwYXJhdG9yKTsNCn0NCg0KLy8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5l
+Q3Vyc29yXzEgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCklEYXRhVXRpbC5wdXQoIHBpcGVsaW5l
+Q3Vyc29yXzEsICJzdHJpbmdPdXQiLCBzLnRvU3RyaW5nKCkgKTsNCnBpcGVsaW5lQ3Vyc29yXzEu
+ZGVzdHJveSgpOw0KCQ==</value>
+</Values>

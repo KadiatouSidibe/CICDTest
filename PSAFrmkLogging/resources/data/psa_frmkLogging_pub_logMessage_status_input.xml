@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="level">INFO</value>
+    <value name="message">toto</value>
+    <value name="project">tta</value>
+    <value name="callingService">DSS</value>
+    <value name="packageName">PP</value>
+  </record>
+</IDataXMLCoder>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getLongDescString</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required service</value>
+    <value>[i] field:0:required inputString</value>
+    <value>[i] field:0:required codeErreur</value>
+    <value>[i] field:0:required msgErreur</value>
+    <value>[o] field:0:required longDescString</value>
+  </array>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCXNlcnZpY2UgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKCBwaXBlbGluZUN1
+cnNvciwgInNlcnZpY2UiICk7DQoJU3RyaW5nCWlucHV0U3RyaW5nID0gSURhdGFVdGlsLmdldFN0
+cmluZyggcGlwZWxpbmVDdXJzb3IsICJpbnB1dFN0cmluZyIgKTsNCglTdHJpbmcJY29kZUVycmV1
+ciA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBpcGVsaW5lQ3Vyc29yLCAiY29kZUVycmV1ciIgKTsN
+CglTdHJpbmcJbXNnRXJyZXVyID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxpbmVDdXJzb3Is
+ICJtc2dFcnJldXIiICk7DQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7DQoNClN0cmluZ0J1ZmZl
+ciBzYj1uZXcgU3RyaW5nQnVmZmVyKCIiKTsNCmlmIChzZXJ2aWNlPT1udWxsIHx8IHNlcnZpY2Uu
+ZXF1YWxzKCIiKSkNCglzZXJ2aWNlPSJTZXJ2aWNlIGluY29ubnUiOw0KaWYgKGNvZGVFcnJldXI9
+PW51bGwgfHwgY29kZUVycmV1ci5lcXVhbHMoIiIpKQ0KCWNvZGVFcnJldXI9IkVSUl9VTktOT1dO
+X0VTQiI7DQppZiAoaW5wdXRTdHJpbmc9PW51bGwgfHwgaW5wdXRTdHJpbmcuZXF1YWxzKCIiKSkN
+CglpbnB1dFN0cmluZz0iW04vQV0iOw0KaWYgKG1zZ0VycmV1cj09bnVsbCB8fCBtc2dFcnJldXIu
+ZXF1YWxzKCIiKSkNCgltc2dFcnJldXI9IkVycmV1ciB2aWRlIjsNCg0Kc2IuYXBwZW5kKCJFcnJl
+dXIgOiAiKS5hcHBlbmQoY29kZUVycmV1cik7DQpzYi5hcHBlbmQoIlxyXG5TZXJ2aWNlIDogIiku
+YXBwZW5kKHNlcnZpY2UpOw0Kc2IuYXBwZW5kKCJcclxuSW5wdXRzIDogIikuYXBwZW5kKGlucHV0
+U3RyaW5nKTsNCnNiLmFwcGVuZCgiXHJcbkxvZyBFcnJldXIgOiAiKS5hcHBlbmQobXNnRXJyZXVy
+KTsNCg0KLy8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yXzEgPSBwaXBlbGlu
+ZS5nZXRDdXJzb3IoKTsNCklEYXRhVXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yXzEsICJsb25nRGVz
+Y1N0cmluZyIsIHNiLnRvU3RyaW5nKCkgKTsNCnBpcGVsaW5lQ3Vyc29yXzEuZGVzdHJveSgpOw0K
+CQ0KCQ0K</value>
+</Values>

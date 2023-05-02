@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="testLog">
+    <webMethodsTestCase description="Generate a Test Wizard" name="Test_logMessage_status">
+        <service folder="psa.frmkLogging.pub" name="logMessage">
+            <input>
+                <file filename="resources/data/psa_frmkLogging_pub_logMessage_status_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/psa_frmkLogging_pub_logMessage_status_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Generate a Test Wizard" name="Test_logMessage_projet">
+        <service folder="psa.frmkLogging.pub" name="logMessage">
+            <input>
+                <file filename="resources/data/psa_frmkLogging_pub_logMessage_input_projet.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/psa_frmkLogging_pub_logMessage_output_projet.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
